@@ -1,0 +1,113 @@
+*{
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    border: 0;
+    margin:0;/* messed the about us part */
+}
+
+.footer{
+
+    background-color: #252c30;
+    color:rgb(161, 153, 153);
+    display: flex;
+    justify-content: center;
+
+   
+}
+
+.footer .ourOffice,.footer .quickLinks,.footer .businessHours,.footer .newsLetter{
+    margin: 5rem 2rem ;
+    /*
+    text-align: left;
+    */
+}
+
+.footer h1{
+    font-family: "Playfair Display", serif;
+    color:rgb(77, 175, 77);
+    margin: 1rem 0;
+
+}
+
+.time{
+    color:white;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+}
+
+.links, .location {
+    display: flex;
+    gap: 8px; /* Adds some space between the icon and text */
+    margin-bottom:-7px;
+    
+  }
+
+  .newsLetter{
+    width: 400px;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+  /*input code*/
+
+  .newsLetter input {
+    width: 100%; /* Makes the input take full width of its container */
+    padding: 15px; /* Adds spacing inside the input */
+    font-size: 16px; /* Increases text size */
+    background-color: black; /* Black background */
+    border: 1px solid white; /* White border */
+    border-radius: 5px; /* Optional: rounded corners */
+    outline: none; /* Removes default focus outline */
+    height: 20%;
+}
+
+.newsLetter input::placeholder {
+    color: rgb(142, 129, 129); /* Light gray placeholder for contrast */
+}
+
+/*input Container*/
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 300px; /* Adjust width as needed */
+}
+
+.input-container input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+
+.input-container button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-left: 1px solid #ccc;
+}
+
+.footer p{
+    padding:.5rem;
+}
+
+
+

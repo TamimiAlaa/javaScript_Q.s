@@ -2,29 +2,36 @@
 // it takes a month parameter and returns 
 // the season:Autumn, Winter, Spring or Summer.
 
-// question = document.getElementById("question");
-// ans = document.getElementById("answer");
+question = document.getElementById("question");
+ans = document.getElementById("answer");
+ans.textContent = 'Answer';
 
-// //ans.textContent = `Season: ${season}`;
+function checkSeason(season){
+    
+    if(season == 'december' || season == 'january' || season == 'february' )
+      ans.textContent = 'Season: winter';
 
-// function checkSeason(season){
-//     if(season == 'december' || season == 'october' )
-//       ans.textContent = 'Season: winter';
-//     //the rest is obvious
-// }
+    else if(season == 'april' || season == 'march' || season == 'may')
+        ans.textContent = 'Season: spring';
 
+    else if(season == 'july' || season == 'august' || season == 'september')
+        ans.textContent = 'Season: summer';
 
+    else if(season == 'october' || season == 'november' || season == 'june')
+        ans.textContent = 'Season: autumn';
+    else
+    ans.textContent = 'Error';
 
-// question.addEventListener('click',function(){
-//     let season = prompt("Enter a season");
-//     checkSeason(season);
-// });
-
-
-//Math.max returns its largest argument. 
-// Write a function findMax that takes 
-// three arguments and returns their 
-// maximum with out using Math.max method.
+    
+}
 
 
-q = document.getElementById
+
+question.addEventListener('click',function(){
+    let season = prompt("Enter a season in full name");
+    season = season.toLowerCase();
+    checkSeason(season);
+});
+
+
+
